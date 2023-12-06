@@ -13,5 +13,5 @@ MonoBehaviour:
   m_Name: LevelResources1
   m_EditorClassIdentifier: 
   _level: 1
-  _money: 550
+  _money: 500
   _food: 50

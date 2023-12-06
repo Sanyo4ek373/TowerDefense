@@ -1,7 +1,7 @@
 using UnityEngine.Events;
 
 public class EnemyModel {
-    private int _hp = 5;
+    private int _hp = 4;
     private float _moveSpeed = 1.5f;
     private int _damage = 1;
     private bool _isAttack = false;

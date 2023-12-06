@@ -17,6 +17,7 @@ public class ResourcesManager : MonoBehaviour {
     private bool _isChanged = false;
     private float _updateTime = 3f;
 
+
     private void Awake() {
         var _resources = Resources.LoadAll<LevelResources>("");
         _money = _resources[0].Money;
@@ -45,7 +46,7 @@ public class ResourcesManager : MonoBehaviour {
         _isChanged = true;
 
         int moneyExpenses = 2 * _buildinsAmount[TOWER];
-        int moneyProfit = 2 * _buildinsAmount[MINE];
+        int moneyProfit = 4 * _buildinsAmount[MINE];
 
         int foodExpenses = 3 * _buildinsAmount[TOWER];
         int foodProfit = 2 * _buildinsAmount[FARM];

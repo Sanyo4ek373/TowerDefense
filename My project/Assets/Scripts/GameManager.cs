@@ -9,7 +9,7 @@ public class GameManager : MonoBehaviour {
     private float _waitTime = 3f;
 
     private void Update() {
-        if (_enemySpawner.GetComponent<EnemySpawner>().VaweNumber == 3) {
+        if (_enemySpawner.GetComponent<EnemySpawner>().VaweNumber == 10) {
             _enemySpawner.SetActive(false);
 
             if (EnemySpawner.EnemyList.Count == 1) StartCoroutine(WinGame(_waitTime));
