@@ -1,3 +1,4 @@
+using System.Collections;
 using UnityEngine;
 
 public class GameManager : MonoBehaviour {
@@ -5,13 +6,13 @@ public class GameManager : MonoBehaviour {
     [SerializeField] private MenuManager _menu;
     [SerializeField] private GameObject _enemySpawner;
 
+    private float _waitTime = 3f;
+
     private void Update() {
-        if (_enemySpawner.GetComponent<EnemySpawner>().VaweNumber == 10) {
+        if (_enemySpawner.GetComponent<EnemySpawner>().VaweNumber == 3) {
             _enemySpawner.SetActive(false);
 
-            foreach (EnemyController enemy in EnemySpawner.EnemyList) {
-                if (enemy == null) WinGame();
-            }
+            if (EnemySpawner.EnemyList.Count == 1) StartCoroutine(WinGame(_waitTime));
         }
     }
 
@@ -27,7 +28,9 @@ public class GameManager : MonoBehaviour {
         _menu.ShowLoseMenu();
     }
 
-    private void WinGame() {
+    private IEnumerator WinGame(float waitTime) {
+        yield return new WaitForSeconds(waitTime);
+
         _menu.ShowWinMenu();
     }
 }
