@@ -5773,7 +5773,7 @@ MonoBehaviour:
   _arrow: {fileID: -4143931341510845870, guid: 543778f8be676c44781518455910d539, type: 3}
   _shootPosition: {fileID: 1828311131}
   _reloadingTime: 2
-  _attackRange: 8
+  _attackRange: 7
 --- !u!1 &812970982
 GameObject:
   m_ObjectHideFlags: 0
@@ -7579,7 +7579,7 @@ MonoBehaviour:
   _arrow: {fileID: -4143931341510845870, guid: 543778f8be676c44781518455910d539, type: 3}
   _shootPosition: {fileID: 56951991}
   _reloadingTime: 2
-  _attackRange: 8
+  _attackRange: 7
 --- !u!1 &1119710421
 GameObject:
   m_ObjectHideFlags: 0
@@ -8240,7 +8240,7 @@ MonoBehaviour:
   _arrow: {fileID: -4143931341510845870, guid: 543778f8be676c44781518455910d539, type: 3}
   _shootPosition: {fileID: 1901827954}
   _reloadingTime: 2
-  _attackRange: 8
+  _attackRange: 7
 --- !u!1 &1193668425
 GameObject:
   m_ObjectHideFlags: 0
@@ -10666,7 +10666,7 @@ MonoBehaviour:
   _arrow: {fileID: -4143931341510845870, guid: 543778f8be676c44781518455910d539, type: 3}
   _shootPosition: {fileID: 1806012120}
   _reloadingTime: 2
-  _attackRange: 8
+  _attackRange: 7
 --- !u!1 &1563867719
 GameObject:
   m_ObjectHideFlags: 0
@@ -14166,7 +14166,7 @@ MonoBehaviour:
   _arrow: {fileID: -4143931341510845870, guid: 543778f8be676c44781518455910d539, type: 3}
   _shootPosition: {fileID: 1647004035}
   _reloadingTime: 2
-  _attackRange: 8
+  _attackRange: 7
 --- !u!1 &2027571664
 GameObject:
   m_ObjectHideFlags: 0
