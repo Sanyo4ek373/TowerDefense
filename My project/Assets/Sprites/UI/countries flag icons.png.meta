@@ -1,0 +1,811 @@
+fileFormatVersion: 2
+guid: 7210f2e867f2bb146b6085ee66b29728
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 12
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: 4
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 1
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 3
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: countries flag icons_0
+      rect:
+        serializedVersion: 2
+        x: 603
+        y: 4265
+        width: 625
+        height: 625
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9790b417ed7e8e842a0198c2f152a0e7
+      internalID: -2087308058
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: countries flag icons_1
+      rect:
+        serializedVersion: 2
+        x: 1384
+        y: 4270
+        width: 625
+        height: 625
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5694a16809738114288f406912388762
+      internalID: 1856361170
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: countries flag icons_2
+      rect:
+        serializedVersion: 2
+        x: 2161
+        y: 4270
+        width: 622
+        height: 625
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8cfde338056ea8a43a0f872746e269ad
+      internalID: 1344881819
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: countries flag icons_3
+      rect:
+        serializedVersion: 2
+        x: 2947
+        y: 4265
+        width: 622
+        height: 625
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1802dd2f2c2617841a2cec41c1eddc99
+      internalID: -403483098
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: countries flag icons_4
+      rect:
+        serializedVersion: 2
+        x: 3730
+        y: 4265
+        width: 625
+        height: 625
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0ba4a26e9cdeb5c479fd9ee579a5cf77
+      internalID: -1296342563
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: countries flag icons_6
+      rect:
+        serializedVersion: 2
+        x: 603
+        y: 3445
+        width: 625
+        height: 627
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 93a28cb631f019b4192b2f217731eefe
+      internalID: 178105940
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: countries flag icons_7
+      rect:
+        serializedVersion: 2
+        x: 1384
+        y: 3445
+        width: 625
+        height: 627
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 45f3ac98c0c9055419a9527db0e95025
+      internalID: 1102332014
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: countries flag icons_8
+      rect:
+        serializedVersion: 2
+        x: 2161
+        y: 3445
+        width: 622
+        height: 627
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4e12e6bec76896b4099a77fa0c309ebd
+      internalID: -1450396232
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: countries flag icons_9
+      rect:
+        serializedVersion: 2
+        x: 2947
+        y: 3445
+        width: 627
+        height: 627
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7e8e7d2d488c206428629acda791997b
+      internalID: -120694009
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: countries flag icons_10
+      rect:
+        serializedVersion: 2
+        x: 3738
+        y: 3445
+        width: 622
+        height: 627
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6ab43c58491e4c8458ae0b53522001d2
+      internalID: 556217710
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: countries flag icons_12
+      rect:
+        serializedVersion: 2
+        x: 603
+        y: 2595
+        width: 625
+        height: 630
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 97ac36dbd0b6145428e36220ac467e27
+      internalID: -983130296
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: countries flag icons_13
+      rect:
+        serializedVersion: 2
+        x: 1389
+        y: 2595
+        width: 625
+        height: 630
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 51954d5c60830cf4484fdac840147639
+      internalID: -1879180441
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: countries flag icons_14
+      rect:
+        serializedVersion: 2
+        x: 2166
+        y: 2595
+        width: 629
+        height: 630
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7b8b7ca801cb6c24b80b77ee80119884
+      internalID: -1539843060
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: countries flag icons_15
+      rect:
+        serializedVersion: 2
+        x: 2957
+        y: 2595
+        width: 627
+        height: 630
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7c9067dec7cb5594890147d3ef341b0e
+      internalID: -434768839
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: countries flag icons_16
+      rect:
+        serializedVersion: 2
+        x: 3757
+        y: 2595
+        width: 623
+        height: 630
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: de2ff6475e1c97947ba9eb8e6f759183
+      internalID: 824560697
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: countries flag icons_21
+      rect:
+        serializedVersion: 2
+        x: 620
+        y: 1743
+        width: 625
+        height: 625
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9a50bd8d42c67694ea18d54347f15582
+      internalID: -1084448573
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: countries flag icons_22
+      rect:
+        serializedVersion: 2
+        x: 1394
+        y: 1743
+        width: 630
+        height: 625
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c30111bb53e3ec24cb081cb56a452b43
+      internalID: -433223901
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: countries flag icons_23
+      rect:
+        serializedVersion: 2
+        x: 2170
+        y: 1743
+        width: 630
+        height: 625
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d74ceeb241f4d934580e6e4b1a9f9421
+      internalID: 1657869277
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: countries flag icons_24
+      rect:
+        serializedVersion: 2
+        x: 2957
+        y: 1743
+        width: 627
+        height: 625
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 755ec2beeaa799c43b118808a81cb7ed
+      internalID: -563641216
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: countries flag icons_25
+      rect:
+        serializedVersion: 2
+        x: 3757
+        y: 1743
+        width: 623
+        height: 625
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 02e6cc2d7e8013940acad6ec16950b6c
+      internalID: 519340958
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: countries flag icons_30
+      rect:
+        serializedVersion: 2
+        x: 620
+        y: 916
+        width: 625
+        height: 629
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4522554c62c5496458b410c9bfcc134f
+      internalID: -93185016
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: countries flag icons_31
+      rect:
+        serializedVersion: 2
+        x: 1394
+        y: 916
+        width: 630
+        height: 625
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d6e26ec2a40e6dc4886aa8c1f65c73b6
+      internalID: -1265033908
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: countries flag icons_32
+      rect:
+        serializedVersion: 2
+        x: 2166
+        y: 916
+        width: 629
+        height: 625
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 66f78434379f99e45a1d7b73f6c0be33
+      internalID: -1393300861
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: countries flag icons_33
+      rect:
+        serializedVersion: 2
+        x: 2961
+        y: 916
+        width: 630
+        height: 625
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a86c11d8ff218004bb72a9196196460f
+      internalID: -1944460692
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: countries flag icons_34
+      rect:
+        serializedVersion: 2
+        x: 3762
+        y: 916
+        width: 630
+        height: 625
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d19d4e5a912af9e4d9b329ee484a5c7c
+      internalID: -1222084131
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: countries flag icons_35
+      rect:
+        serializedVersion: 2
+        x: 620
+        y: 105
+        width: 625
+        height: 630
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c4a887fa1ff580e4fbebd3c77d5c6776
+      internalID: 1742751785
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: countries flag icons_36
+      rect:
+        serializedVersion: 2
+        x: 1394
+        y: 105
+        width: 630
+        height: 630
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: db7ad1512e805834cbc6b8d3fb4f6a6e
+      internalID: 1244613784
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: countries flag icons_37
+      rect:
+        serializedVersion: 2
+        x: 2170
+        y: 105
+        width: 630
+        height: 630
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 328a7d55b7c7d6b448482420fcc57b73
+      internalID: -44026585
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: countries flag icons_38
+      rect:
+        serializedVersion: 2
+        x: 2966
+        y: 105
+        width: 625
+        height: 630
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4c57291786bb5fc4db0b49b0692f5750
+      internalID: 1498263307
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: countries flag icons_39
+      rect:
+        serializedVersion: 2
+        x: 3767
+        y: 105
+        width: 630
+        height: 630
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1e0785be859b598468dca6c41162ff3d
+      internalID: 1975824218
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      countries flag icons_0: -2087308058
+      countries flag icons_1: 1856361170
+      countries flag icons_10: 556217710
+      countries flag icons_11: -378747730
+      countries flag icons_12: -983130296
+      countries flag icons_13: -1879180441
+      countries flag icons_14: -1539843060
+      countries flag icons_15: -434768839
+      countries flag icons_16: 824560697
+      countries flag icons_17: 921167220
+      countries flag icons_18: -694701444
+      countries flag icons_19: -1842958393
+      countries flag icons_2: 1344881819
+      countries flag icons_20: -675526317
+      countries flag icons_21: -1084448573
+      countries flag icons_22: -433223901
+      countries flag icons_23: 1657869277
+      countries flag icons_24: -563641216
+      countries flag icons_25: 519340958
+      countries flag icons_26: 2087814273
+      countries flag icons_27: 52283193
+      countries flag icons_28: 502998873
+      countries flag icons_29: -1458979776
+      countries flag icons_3: -403483098
+      countries flag icons_30: -93185016
+      countries flag icons_31: -1265033908
+      countries flag icons_32: -1393300861
+      countries flag icons_33: -1944460692
+      countries flag icons_34: -1222084131
+      countries flag icons_35: 1742751785
+      countries flag icons_36: 1244613784
+      countries flag icons_37: -44026585
+      countries flag icons_38: 1498263307
+      countries flag icons_39: 1975824218
+      countries flag icons_4: -1296342563
+      countries flag icons_40: 1753651103
+      countries flag icons_5: 2117429380
+      countries flag icons_6: 178105940
+      countries flag icons_7: 1102332014
+      countries flag icons_8: -1450396232
+      countries flag icons_9: -120694009
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
