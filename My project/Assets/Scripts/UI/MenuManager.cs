@@ -9,6 +9,10 @@ public class MenuManager : MonoBehaviour {
   [SerializeField] private GameObject _loseMenu;
   [SerializeField] private GameObject _pauseButton;
 
+  private void Awake() {
+    Time.timeScale = 1f;
+  }
+
   private bool _gameIsPaused = true;
   private bool _settingsEnabled = true;
 
