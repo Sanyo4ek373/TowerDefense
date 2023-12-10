@@ -26,7 +26,8 @@ public class EnemySpawner : MonoBehaviour {
             }
             
             _vaweNumber += 1;
-            _spawnTime -= _spawnTime <=3 ? 0 : _vaweNumber/5f;
+            float newSpawnTime = _vaweNumber/5f;
+            _spawnTime -= _spawnTime <=3 ? 0 : newSpawnTime;
         }
     }
 

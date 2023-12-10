@@ -6,8 +6,6 @@ using UnityEngine.Events;
 public class ResourcesManager : MonoBehaviour {
     [SerializeField] private UITopBarView _uiPanel;
 
-    private int _money, _moneyBalance;
-    private int _food, _foodBalance;
     private const string TOWER = "Tower";
     private const string FARM = "Farm";
     private const string MINE = "Mine";
@@ -16,6 +14,11 @@ public class ResourcesManager : MonoBehaviour {
 
     private bool _isChanged = false;
     private float _updateTime = 3f;
+
+    private int _money, _moneyBalance;
+    private int _food, _foodBalance;
+    private int _moneyIncome = 4;
+    private int _foodIncome = 2;
 
 
     private void Awake() {
@@ -46,10 +49,10 @@ public class ResourcesManager : MonoBehaviour {
         _isChanged = true;
 
         int moneyExpenses = 2 * _buildinsAmount[TOWER];
-        int moneyProfit = 4 * _buildinsAmount[MINE];
+        int moneyProfit = _moneyIncome * _buildinsAmount[MINE];
 
         int foodExpenses = 3 * _buildinsAmount[TOWER];
-        int foodProfit = 2 * _buildinsAmount[FARM];
+        int foodProfit = _foodIncome * _buildinsAmount[FARM];
 
         _moneyBalance = moneyProfit - moneyExpenses;
         _money += _moneyBalance;
@@ -72,6 +75,14 @@ public class ResourcesManager : MonoBehaviour {
 
     public void ChangeBuildingsAmount(string buildingType) {
         _buildinsAmount[buildingType] += 1;
+    }
+
+    public void ChangeMoneyIncome(int income) {
+        _moneyIncome += income;
+    }
+
+    public void ChangeFoodIncome(int income) {
+        _foodIncome += income;
     }
 
     public UnityEvent OnResourceLack = new();

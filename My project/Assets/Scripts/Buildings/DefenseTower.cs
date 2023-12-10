@@ -32,4 +32,8 @@ public class DefenseTower : MonoBehaviour {
 
         _isShotting = true;
     }
+
+    public void ChangeReloadingTime(float time) {
+        _reloadingTime -= time;
+    }
 }

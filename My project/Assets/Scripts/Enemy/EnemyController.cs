@@ -16,7 +16,7 @@ public class EnemyController : MonoBehaviour {
 
     private void Update() {
         float moveDistance = _model.MoveSpeed * Time.deltaTime;
-        Vector3 moveDirection = findTarget(_target);
+        Vector3 moveDirection = FindTarget(_target);
         bool canMove = moveDirection.x < -0.01;
 
         _model.IsRun = canMove;
@@ -25,7 +25,7 @@ public class EnemyController : MonoBehaviour {
         else if (!_model.IsAttack) Attack();
     }
 
-    private Vector2 findTarget(Transform target) {
+    private Vector2 FindTarget(Transform target) {
         Vector3 movementVector = new Vector3(target.position.x - transform.position.x, 0, 0).normalized;
         return movementVector;
     }
