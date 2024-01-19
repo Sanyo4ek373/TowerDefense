@@ -1869,7 +1869,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2703b618b460288448826bcc7fa16902, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _defenseTower: {fileID: 1563238818}
+  _defenseTowers:
+  - {fileID: 1563238818}
+  - {fileID: 781094876}
+  - {fileID: 1115453793}
+  - {fileID: 1190992594}
+  - {fileID: 1996905332}
   _resources: {fileID: 2075669849}
   _upgradesCostLabels:
   - {fileID: 923837540}
@@ -6121,7 +6126,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 00511fa66ed04f04989b03a99af82288, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _clip: {fileID: 0}
+  _clip: {fileID: 8300000, guid: c2fead57c191ddc4c9f243ac2f315a33, type: 3}
 --- !u!1 &777616160
 GameObject:
   m_ObjectHideFlags: 0
