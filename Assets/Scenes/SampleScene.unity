@@ -4934,7 +4934,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 23adb2d23eb5f674485489b2800a61b9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _toggleMusic: 0
+  _toggleMusic: 1
   _toggleEffects: 0
 --- !u!114 &643170130
 MonoBehaviour:
@@ -15802,7 +15802,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _toggleMusic: 0
-  _toggleEffects: 0
+  _toggleEffects: 1
 --- !u!114 &2066592722
 MonoBehaviour:
   m_ObjectHideFlags: 0
