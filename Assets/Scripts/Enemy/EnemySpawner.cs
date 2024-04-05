@@ -1,17 +1,18 @@
 using System.Collections;
 using System.Collections.Generic;
+using System.Linq;
 using UnityEngine;
-using UnityEngine.Events;
 
 public class EnemySpawner : MonoBehaviour {
     [SerializeField] private Transform[] _spawnPlaces;
     [SerializeField] private GameObject[] _troops;
+    [SerializeField] private MainBuilding _mainBuilding;
     [SerializeField] private float _spawnTime;
     
     private bool _isTroopsSpawned = true;
-    private int _vaweNumber;
+    private int _waveNumber;
 
-    public int VaweNumber => _vaweNumber;
+    public int WaveNumber => _waveNumber;
 
     public static List<EnemyController> EnemyList = new();
 
@@ -25,20 +26,21 @@ public class EnemySpawner : MonoBehaviour {
                 StartCoroutine(SpawnTroops(_spawnTime, _troops[0], _spawnPlaces[i]));
             }
             
-            _vaweNumber += 1;
-            float newSpawnTime = _vaweNumber/5f;
+            _waveNumber += 1;
+            float newSpawnTime = _waveNumber/5f;
             _spawnTime -= _spawnTime <=3 ? 0 : newSpawnTime;
         }
     }
 
     private IEnumerator SpawnTroops(float waitTime, GameObject troop, Transform spawnPlace) {
         _isTroopsSpawned = false;
-
+    
         EnemyList.Add(
             Instantiate(troop, spawnPlace.position, Quaternion.identity)
             .GetComponent<EnemyController>()
         );
-
+        
+        EnemyList.Last().Construct(_mainBuilding);
         yield return new WaitForSeconds(waitTime);
 
         _isTroopsSpawned = true;
