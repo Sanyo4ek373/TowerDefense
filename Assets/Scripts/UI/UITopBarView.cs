@@ -12,19 +12,8 @@ public class UITopBarView : MonoBehaviour {
     [SerializeField] private TextMeshProUGUI _foodLabel;
     [SerializeField] private TextMeshProUGUI _foodBalanceLabel;
 
+    [SerializeField] private MainBuilding _mainBuilding;
 
-    private void Awake() {
-        MainBuilding.Instance.OnTakeDamage.AddListener(ChangeHealth);
-    }
-
-    private void OnDestroy() {
-        MainBuilding.Instance.OnTakeDamage.RemoveListener(ChangeHealth);
-    }
-
-    private void ChangeHealth(int health) {
-        _hpLabel.text = $"{health}";
-        _healthBar.value = health;
-    }
 
     public void ChangeMoney(int money) {
         _moneyLabel.text = $"{money}";
@@ -40,5 +29,18 @@ public class UITopBarView : MonoBehaviour {
 
     public void ChangeFoodBalance(int foodBalance) {
         _foodBalanceLabel.text = $"{foodBalance}";
+    }
+
+    private void Awake() {
+        _mainBuilding.OnTakeDamage += ChangeHealth;
+    }
+
+    private void OnDestroy() {
+        _mainBuilding.OnTakeDamage -= ChangeHealth;
+    }
+
+    private void ChangeHealth(int health) {
+        _hpLabel.text = $"{health}";
+        _healthBar.value = health;
     }
 }

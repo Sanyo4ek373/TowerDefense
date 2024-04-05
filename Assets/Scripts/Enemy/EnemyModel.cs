@@ -1,6 +1,8 @@
-using UnityEngine.Events;
+using System;
 
 public class EnemyModel {
+    public Action OnDied;
+
     private int _health = 5;
     private float _moveSpeed = 1.5f;
     private int _damage = 1;
@@ -12,17 +14,12 @@ public class EnemyModel {
     public bool IsRun { get; set; }
     public bool IsAttack { get => _isAttack; 
         set {
-            if (value) OnAttack.Invoke();
             _isAttack = value;
         } 
     }
 
     public void TakeDamage(int damage) {
         _health -= damage;
-        if (_health <= 0) OnDied.Invoke();
+        if (_health <= 0) OnDied();
     }
-
-    public UnityEvent OnDied = new();
-
-    public UnityEvent OnAttack = new();
 }

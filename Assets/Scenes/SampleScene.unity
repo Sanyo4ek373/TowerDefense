@@ -5266,24 +5266,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 44f71fbc68f48c542b1988325174d813, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  OnBuildingDestroy:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 1513039709}
-        m_TargetAssemblyTypeName: GameManagerController, Assembly-CSharp
-        m_MethodName: EndGame
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-  OnTakeDamage:
-    m_PersistentCalls:
-      m_Calls: []
 --- !u!1 &669265365
 GameObject:
   m_ObjectHideFlags: 0
@@ -11486,6 +11468,7 @@ MonoBehaviour:
   - {fileID: 961059941}
   _troops:
   - {fileID: 3438586458569498765, guid: c85f354ddd14a6142ab8cda3dcf5b919, type: 3}
+  _mainBuilding: {fileID: 659986635}
   _spawnTime: 10
 --- !u!1 &1600338316
 GameObject:
@@ -12216,6 +12199,7 @@ MonoBehaviour:
   _moneyBalanceLabel: {fileID: 463181396}
   _foodLabel: {fileID: 683419801}
   _foodBalanceLabel: {fileID: 1633266699}
+  _mainBuilding: {fileID: 659986635}
 --- !u!1 &1661318346
 GameObject:
   m_ObjectHideFlags: 0
