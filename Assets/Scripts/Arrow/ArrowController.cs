@@ -1,14 +1,21 @@
 using System;
 using UnityEngine;
-using UnityEngine.Diagnostics;
 
 public class ArrowController : MonoBehaviour {
     private ArrowModel _model;
+
     private bool _isHit = false;
+
+    private float _borderX = 8f;
+    private float _borderY = 3f;
+
+    public void Construct(Vector3 targetPosition) {
+        Vector3 moveDirection = targetPosition - transform.position;
+        _model = new ArrowModel(moveDirection.normalized);
+    }
 
     private void Update() {
         if (_isHit) return;
-
         transform.position += _model.MoveDirection * _model.MoveSpeed * Time.deltaTime;
         
         float angle = GetAngle(_model.MoveDirection);
@@ -18,12 +25,13 @@ public class ArrowController : MonoBehaviour {
             if (Vector3.Distance(transform.position, enemy.transform.position) < _model.DestroyDistance ) {
                 enemy.Model.TakeDamage(_model.Damage);
                 _isHit = true;
+
                 ArrowDestroy();
                 break;
             }
         }
 
-        if (Math.Abs(transform.position.x) > 8 || Math.Abs(transform.position.y) > 3) Destroy(gameObject);
+        if (Math.Abs(transform.position.x) > _borderX || Math.Abs(transform.position.y) > _borderY) Destroy(gameObject);
     }
 
     private float GetAngle(Vector3 direction) {
@@ -31,11 +39,6 @@ public class ArrowController : MonoBehaviour {
         float n = Mathf.Atan2(direction.y, direction.x) * Mathf.Rad2Deg;
 
         return n - 90;
-    }
-
-    public void Construct(Vector3 targetPosition) {
-        Vector3 moveDirection = targetPosition - transform.position;
-        _model = new ArrowModel(moveDirection.normalized);
     }
 
     private void ArrowDestroy() {

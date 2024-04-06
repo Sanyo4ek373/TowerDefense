@@ -9,17 +9,17 @@ public class GameManager : MonoBehaviour {
 
     private float _waitTime = 3f;
 
+    private void Awake() {
+        _resources.OnResourceLack += EndGame;
+        _mainBuilding.OnBuildingDestroy += EndGame;
+    }
+
     private void Update() {
         if (_enemySpawner.GetComponent<EnemySpawner>().WaveNumber == 15) {
             _enemySpawner.SetActive(false);
 
             if (EnemySpawner.EnemyList.Count == 1) StartCoroutine(WinGame(_waitTime));
         }
-    }
-
-    private void Awake() {
-        _resources.OnResourceLack += EndGame;
-        _mainBuilding.OnBuildingDestroy += EndGame;
     }
 
     private void OnDestroy() {

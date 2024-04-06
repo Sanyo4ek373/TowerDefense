@@ -1,10 +1,9 @@
 using UnityEngine;
 
-public class PlayButtonPressedSound : MonoBehaviour
-{
+public class PlayButtonPressedSound : MonoBehaviour {
     [SerializeField] private AudioClip _clip;
 
-    public void PlaySound(){
+    public void PlaySound() {
         SoundManager.Instance.PlayButtonSound(_clip);
     }
 }

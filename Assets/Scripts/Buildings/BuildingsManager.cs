@@ -10,6 +10,7 @@ public class BuildingsManager : MonoBehaviour {
 
     private int _buildingNumber = 0;
     private int _buildingCost = 50;
+    private int _increaseCost = 50;
 
     public void Build() {
         if (_buildingNumber == _buildings.Length) return;
@@ -21,7 +22,7 @@ public class BuildingsManager : MonoBehaviour {
         _buildings[_buildingNumber].SetActive(true);
 
         _buildingNumber += 1;
-        _buildingCost += 50;
+        _buildingCost += _increaseCost;
 
         ShowBuildCost();
     }

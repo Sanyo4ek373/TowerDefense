@@ -10,6 +10,10 @@ public class DefenseTower : MonoBehaviour {
     
     private bool _isShotting = true;
 
+    public void ChangeReloadingTime(float time) {
+        _reloadingTime -= time;
+    }
+
     private void Update() {
         if (!_isShotting) return;
 
@@ -31,9 +35,5 @@ public class DefenseTower : MonoBehaviour {
         yield return new WaitForSeconds(waitTime);
 
         _isShotting = true;
-    }
-
-    public void ChangeReloadingTime(float time) {
-        _reloadingTime -= time;
     }
 }
