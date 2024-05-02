@@ -20,7 +20,8 @@ public class UITopBarView : MonoBehaviour {
     }
 
     public void ChangeMoneyBalance(int moneyBalance) {
-        _moneyBalanceLabel.text = $"{moneyBalance}";
+        _moneyBalanceLabel.color = moneyBalance < 0 ? Color.red : Color.green;
+        _moneyBalanceLabel.text = moneyBalance < 0 ? $"{moneyBalance}" : $"+{moneyBalance}";
     }
 
     public void ChangeFood(int food) {
@@ -28,7 +29,8 @@ public class UITopBarView : MonoBehaviour {
     }
 
     public void ChangeFoodBalance(int foodBalance) {
-        _foodBalanceLabel.text = $"{foodBalance}";
+        _foodBalanceLabel.color = foodBalance < 0 ? Color.red : Color.green;
+        _foodBalanceLabel.text = foodBalance < 0 ? $"{foodBalance}" : $"+{foodBalance}";
     }
 
     private void Awake() {

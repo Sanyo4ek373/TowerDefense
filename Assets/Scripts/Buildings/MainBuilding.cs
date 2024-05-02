@@ -5,12 +5,14 @@ public class MainBuilding : MonoBehaviour {
     public Action OnBuildingDestroy;
     public Action<int> OnTakeDamage;
 
-    private int _health = 100;
+    private static int health = 100; 
     
     public void TakeDamage(int damage) {
-        OnTakeDamage(_health);
+        health -= damage;
+
+        int currentHealth = Mathf.Clamp(health, 0, health);
+        OnTakeDamage(currentHealth);
         
-        _health -= damage;
-        if (_health <= 0) OnBuildingDestroy();
+        if (health <= 0) OnBuildingDestroy();
     }
 }

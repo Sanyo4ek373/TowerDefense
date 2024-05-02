@@ -19,8 +19,12 @@ public class ResourcesManager : MonoBehaviour {
 
     private int _money, _moneyBalance;
     private int _food, _foodBalance;
+
     private int _moneyIncome = 4;
     private int _foodIncome = 2;
+
+    private int _towerFoodMaintenance = 3;
+    private int _towerGoldMaintenance = 2;
 
     public int CheckMoney() {
         return _money;
@@ -63,16 +67,15 @@ public class ResourcesManager : MonoBehaviour {
 
         if (_isChanged) return;
         StartCoroutine(ChangeResources(_updateTime));
-
     }
 
     private IEnumerator ChangeResources(float waitTime) {
         _isChanged = true;
 
-        int moneyExpenses = 2 * _buildingsAmount[TOWER];
+        int moneyExpenses = _towerGoldMaintenance * _buildingsAmount[TOWER];
         int moneyProfit = _moneyIncome * _buildingsAmount[MINE];
 
-        int foodExpenses = 3 * _buildingsAmount[TOWER];
+        int foodExpenses = _towerFoodMaintenance * _buildingsAmount[TOWER];
         int foodProfit = _foodIncome * _buildingsAmount[FARM];
 
         _moneyBalance = moneyProfit - moneyExpenses;
