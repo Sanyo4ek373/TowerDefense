@@ -5,6 +5,10 @@ using UnityEngine.Localization.Settings;
 public class LanguageManager : MonoBehaviour {
     private bool _isActive = false;
 
+    public string GetCurrentLocaleName() {
+        return LocalizationSettings.SelectedLocale.LocaleName;
+    }
+
     public void ChangeLanguage(int localeID) {
         if (_isActive) return;
 

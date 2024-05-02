@@ -5860,10 +5860,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _pauseMenu: {fileID: 1175702008}
-  _settings: {fileID: 1221322606}
+  _pauseButton: {fileID: 2027571664}
   _winMenu: {fileID: 1731800553}
   _loseMenu: {fileID: 2090903305}
-  _pauseButton: {fileID: 2027571664}
+  _settings: {fileID: 1221322606}
 --- !u!4 &744293023
 Transform:
   m_ObjectHideFlags: 0
@@ -9927,6 +9927,7 @@ GameObject:
   - component: {fileID: 1384761778}
   - component: {fileID: 1384761777}
   - component: {fileID: 1384761776}
+  - component: {fileID: 1384761779}
   m_Layer: 5
   m_Name: SelectLanguage
   m_TagString: Untagged
@@ -10080,6 +10081,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1384761774}
   m_CullTransparentMesh: 1
+--- !u!114 &1384761779
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1384761774}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 834daa9d3d9cd8e448d5fb9786792e87, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _languageManager: {fileID: 669265368}
 --- !u!1 &1386933542
 GameObject:
   m_ObjectHideFlags: 0
@@ -10935,6 +10949,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _resources: {fileID: 2075669849}
   _menu: {fileID: 744293022}
+  _mainBuilding: {fileID: 659986635}
   _enemySpawner: {fileID: 1588438900}
 --- !u!4 &1513039710
 Transform:
@@ -12959,7 +12974,7 @@ MonoBehaviour:
     m_PressedTrigger: Pressed
     m_SelectedTrigger: Selected
     m_DisabledTrigger: Disabled
-  m_Interactable: 1
+  m_Interactable: 0
   m_TargetGraphic: {fileID: 0}
   m_FillRect: {fileID: 734854223}
   m_HandleRect: {fileID: 0}
@@ -16037,9 +16052,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _uiPanel: {fileID: 1657703813}
-  OnResourceLack:
-    m_PersistentCalls:
-      m_Calls: []
 --- !u!4 &2075669850
 Transform:
   m_ObjectHideFlags: 0
