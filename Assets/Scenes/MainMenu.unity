@@ -782,7 +782,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 5
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &130589906
 GameObject:
@@ -1529,7 +1529,7 @@ Transform:
   - {fileID: 1373828965}
   - {fileID: 1813270393}
   m_Father: {fileID: 0}
-  m_RootOrder: 4
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &263255652
 GameObject:
@@ -2119,7 +2119,7 @@ Transform:
   m_Children:
   - {fileID: 1097848320}
   m_Father: {fileID: 0}
-  m_RootOrder: 6
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &537187523
 GameObject:
@@ -2589,7 +2589,6 @@ GameObject:
   m_Component:
   - component: {fileID: 561027543}
   - component: {fileID: 561027542}
-  - component: {fileID: 561027544}
   m_Layer: 0
   m_Name: MenuManager
   m_TagString: Untagged
@@ -2610,10 +2609,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _pauseMenu: {fileID: 726071862}
-  _settings: {fileID: 726071862}
+  _pauseButton: {fileID: 726071862}
   _winMenu: {fileID: 726071862}
   _loseMenu: {fileID: 726071862}
-  _pauseButton: {fileID: 726071862}
+  _settings: {fileID: 726071862}
 --- !u!4 &561027543
 Transform:
   m_ObjectHideFlags: 0
@@ -2629,18 +2628,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &561027544
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 561027541}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7166a74de6c2944449ce1220b8fe7c3b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &614819894
 GameObject:
   m_ObjectHideFlags: 0
@@ -10366,6 +10353,7 @@ GameObject:
   - component: {fileID: 1153176297}
   - component: {fileID: 1153176296}
   - component: {fileID: 1153176295}
+  - component: {fileID: 1153176298}
   m_Layer: 5
   m_Name: SelectLanguage
   m_TagString: Untagged
@@ -10468,7 +10456,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 561027544}
+      - m_Target: {fileID: 1416060889}
         m_TargetAssemblyTypeName: LanguageManager, Assembly-CSharp
         m_MethodName: ChangeLanguage
         m_Mode: 0
@@ -10519,6 +10507,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1153176293}
   m_CullTransparentMesh: 1
+--- !u!114 &1153176298
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1153176293}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 834daa9d3d9cd8e448d5fb9786792e87, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _languageManager: {fileID: 1416060889}
 --- !u!1 &1160180013
 GameObject:
   m_ObjectHideFlags: 0
@@ -11714,6 +11715,50 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!1 &1416060888
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1416060890}
+  - component: {fileID: 1416060889}
+  m_Layer: 0
+  m_Name: LanguageManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1416060889
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1416060888}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7166a74de6c2944449ce1220b8fe7c3b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!4 &1416060890
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1416060888}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -0.3236045, y: -0.2278943, z: 5.9691277}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 4
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1456163667
 GameObject:
   m_ObjectHideFlags: 0
