@@ -9,9 +9,16 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8ce9ea3e5dc7da645be8da43bc9b8a78, type: 3}
-  m_Name: LevelResources1
+  m_Script: {fileID: 11500000, guid: cd2a31e680578434499b0ebfc05e472a, type: 3}
+  m_Name: LevelResources
   m_EditorClassIdentifier: 
-  _level: 1
-  _money: 500
-  _food: 50
+  Gold:
+    _serializableValue: 0
+  Food:
+    _serializableValue: 0
+  Farms:
+    _serializableValue: 0
+  Goldmines:
+    _serializableValue: 0
+  Defensetowers:
+    _serializableValue: 0

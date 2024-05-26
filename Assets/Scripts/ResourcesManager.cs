@@ -52,7 +52,7 @@ public class ResourcesManager : MonoBehaviour {
         _food = _resources[0].Food;
 
         _buildingsAmount = new Dictionary<string, int> {
-            { FARM, 1 }, { MINE, 1}, { TOWER, 1}
+            {FARM, 1}, {MINE, 1}, {TOWER, 1}
         };
     }
 
