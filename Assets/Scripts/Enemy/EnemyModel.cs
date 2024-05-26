@@ -3,7 +3,7 @@ using System;
 public class EnemyModel {
     public Action OnDied;
 
-    private int _health = 5;
+    private int _health = 3;
     private float _moveSpeed = 1.5f;
     private int _damage = 1;
     private bool _isAttack = false;

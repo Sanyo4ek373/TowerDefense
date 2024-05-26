@@ -6,8 +6,8 @@ public class UpgradesManager : MonoBehaviour {
     [SerializeField] private ResourcesManager _resources;
     [SerializeField] private TextMeshProUGUI[] _upgradesCostLabels;
 
-    private int _upgradesCost = 10;
-    private int _upgradesCostIncrease = 15;
+    private int _upgradesCost;
+    private int _upgradesCostIncrease;
     private int _defenseTowerUpgrades = 0;
     private int _defenseTowerMaxUpgrades = 6;
     private float _reloadingTime = 0.2f;
@@ -38,6 +38,11 @@ public class UpgradesManager : MonoBehaviour {
         DoUpgrade();
     }
 
+    private void Awake() {
+        var _resources = Resources.LoadAll<GeneratedSO_20240526_140935>("");
+        _upgradesCost = _resources[0].UpgradeCost._serializableValue;
+        _upgradesCostIncrease = _resources[0].UpgradeCostIncrease._serializableValue;
+    }
     private void DoUpgrade() {
         _resources.SpendMoney(_upgradesCost);
         _upgradesCost += _upgradesCostIncrease;

@@ -9,16 +9,20 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: cd2a31e680578434499b0ebfc05e472a, type: 3}
+  m_Script: {fileID: 11500000, guid: 99899872790ca634bb56281965c43d64, type: 3}
   m_Name: LevelResources
   m_EditorClassIdentifier: 
   Gold:
-    _serializableValue: 0
+    _serializableValue: 450
   Food:
-    _serializableValue: 0
+    _serializableValue: 50
   Farms:
-    _serializableValue: 0
-  Goldmines:
-    _serializableValue: 0
-  Defensetowers:
-    _serializableValue: 0
+    _serializableValue: 1
+  GoldMines:
+    _serializableValue: 1
+  DefenseTowers:
+    _serializableValue: 1
+  UpgradeCost:
+    _serializableValue: 20
+  UpgradeCostIncrease:
+    _serializableValue: 20

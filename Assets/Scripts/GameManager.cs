@@ -15,7 +15,7 @@ public class GameManager : MonoBehaviour {
     }
 
     private void Update() {
-        if (_enemySpawner.GetComponent<EnemySpawner>().WaveNumber == 15) {
+        if (_enemySpawner.GetComponent<EnemySpawner>().WaveLevel == 6) {
             _enemySpawner.SetActive(false);
 
             if (EnemySpawner.EnemyList.Count == 1) StartCoroutine(WinGame(_waitTime));

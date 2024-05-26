@@ -21,7 +21,7 @@ public class ResourcesManager : MonoBehaviour {
     private int _food, _foodBalance;
 
     private int _moneyIncome = 4;
-    private int _foodIncome = 2;
+    private int _foodIncome = 3;
 
     private int _towerFoodMaintenance = 3;
     private int _towerGoldMaintenance = 2;
@@ -47,12 +47,14 @@ public class ResourcesManager : MonoBehaviour {
     }
 
     private void Awake() {
-        var _resources = Resources.LoadAll<LevelResources>("");
-        _money = _resources[0].Money;
-        _food = _resources[0].Food;
+        var _resources = Resources.LoadAll<GeneratedSO_20240526_140935>("");
+         _money = _resources[0].Gold._serializableValue;
+         _food = _resources[0].Food._serializableValue;
 
         _buildingsAmount = new Dictionary<string, int> {
-            {FARM, 1}, {MINE, 1}, {TOWER, 1}
+            {FARM, _resources[0].Farms._serializableValue}, 
+            {MINE, _resources[0].GoldMines._serializableValue}, 
+            {TOWER, _resources[0].DefenseTowers._serializableValue}
         };
     }
 

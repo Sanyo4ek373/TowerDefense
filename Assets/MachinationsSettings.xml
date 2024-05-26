@@ -1,0 +1,7 @@
+<?xml version="1.0"?>
+<MnConfig xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <APIURL>https://my.machinations.io/</APIURL>
+  <UserKey>0f920448-3425-4faf-a3a5-07e72ae80d13</UserKey>
+  <DiagramToken>5cf30c27-135d-4487-a764-deebf422176b</DiagramToken>
+  <GameName>Tower Defense</GameName>
+</MnConfig>

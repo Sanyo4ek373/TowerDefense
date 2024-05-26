@@ -1,0 +1,28 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1077c5dfbfbc44d0960498d5656fc1cd, type: 3}
+  m_Name: Machi CP Graphics
+  m_EditorClassIdentifier: 
+  MachinationsIcon: {fileID: 2800000, guid: ece4b99c18230064dabede475489db77, type: 3}
+  BigMachinationsIcon: {fileID: 2800000, guid: 0b38b511110e57d45acf4a73d74bde0f, type: 3}
+  AltMachinationsIcon: {fileID: 2800000, guid: 5954bbac232feb748abe45a95122f359, type: 3}
+  Pool: {fileID: 2800000, guid: 09cc478184642cd49a75ef859dadeddc, type: 3}
+  Drain: {fileID: 2800000, guid: b43edc78208a6744992568ea18e8fa09, type: 3}
+  StateConnection: {fileID: 2800000, guid: 781785b092bb1fd4397dc42b1efd6549, type: 3}
+  ResourceConnection: {fileID: 2800000, guid: 7a5594719a9eb4044bdeb1eaa4f30cbd, type: 3}
+  EndCondition: {fileID: 2800000, guid: b7dd740fe54cee0409e0fcbdd50edab9, type: 3}
+  Delay: {fileID: 2800000, guid: 15eb295651e7bc24690eb2bc7ae10a9e, type: 3}
+  Register: {fileID: 2800000, guid: 20283c0a59992844aba31408cd762ec6, type: 3}
+  Converter: {fileID: 2800000, guid: e6efe53ded88cbd43882a22ad456f9f2, type: 3}
+  Trader: {fileID: 2800000, guid: ef374c703839fa447b61ce3b5f110858, type: 3}
+  Gate: {fileID: 2800000, guid: a9105f088f2aba34abd4dad29ded0f10, type: 3}
+  Source: {fileID: 2800000, guid: 7bc7710c2d766bd47bc21a82cb88a3f7, type: 3}
